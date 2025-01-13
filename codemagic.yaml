@@ -1,17 +1,19 @@
 version: 1.0
+
 workflows:
-  ios:
+  ios_build:
     name: Build iOS
     max_build_duration: 120
-    platforms:
-      ios:
-        fluttermobile:
-          flutter: stable
-          build_mode: release
-          ios_signing:
-            distribution_method: app-store
-            certificate: "PATH_TO_YOUR_CERTIFICATE"
-            provisioning_profile: "PATH_TO_YOUR_PROVISIONING_PROFILE"
+    environment:
+      flutter: stable
+      xcode: latest
     scripts:
+      - name: Install dependencies
+        script: flutter pub get
       - name: Run tests
         script: flutter test
+      - name: Build iOS
+        script: flutter build ios --release --no-codesign
+    artifacts:
+      - build/ios/iphoneos/*.ipa
+
