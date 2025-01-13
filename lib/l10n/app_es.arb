@@ -1,0 +1,31 @@
+{
+    "@@locale": "es",
+    "cowTracker": "Rastreador de Vacas",
+    "cows": "Vacas",
+    "calendar": "Calendario",
+    "addCow": "Agregar Vaca",
+    "editCow": "Editar Vaca",
+    "cowName": "Nombre de la Vaca",
+    "pregnancyDate": "Fecha de Embarazo",
+    "cancel": "Cancelar",
+    "add": "Agregar",
+    "save": "Guardar",
+    "confirmDeletion": "Confirmar Eliminación",
+    "deleteCowConfirmation": "¿Estás seguro de que deseas eliminar la vaca llamada {name}?",
+    "@deleteCowConfirmation": {
+        "placeholders": {
+            "name": {}
+        }
+    },
+    "delete": "Eliminar",
+    "settings": "Configuración",
+    "darkTheme": "Tema Oscuro",
+    "language": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español",
+    "dueDateLabel": "Fecha de parto",
+    "notPregnantLabel": "No preñada",
+    "cowNameAlreadyExists": "Ya existe una vaca con este nombre. Por favor, elige otro."
+
+  }
+  
